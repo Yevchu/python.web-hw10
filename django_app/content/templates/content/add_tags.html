@@ -1,0 +1,20 @@
+{% extends "content/base.html" %}
+
+{% block content %}
+
+<form method="POST" action="{% url 'content:add_tags' %}">
+    {% csrf_token  %}
+    <div style="padding: 10px;">
+        <label>
+            Add tags: 
+            {{form.tags}}
+        </label>
+        <span>{{ form.errors.tags }}</span>
+    </div>
+    <div class="grid">
+        <button type="submit">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+    </div>
+</form>
+
+{% endblock %}

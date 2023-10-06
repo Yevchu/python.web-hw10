@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django app"
+version = "0.1.0"
+description = ""
+authors = ["Vitalyi <evciu97@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+SQLAlchemy = "^2.0.21"
+django = "^4.2.5"
+mongoengine = "^0.27.0"
+psycopg2 = "^2.9.9"
+bson = "^0.5.10"
+pymongo = "^4.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

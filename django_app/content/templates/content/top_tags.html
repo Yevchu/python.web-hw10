@@ -1,0 +1,15 @@
+{% extends "content/base.html" %}
+
+{% block content %}
+
+        {% for tag in tags %}
+        <ul>
+            <li>
+                <span class="tag-item">
+                    <a class="tag" style="font-size: 16px" href="#">{{ tag }} </a>
+                </span>
+            </li>
+        </ul>
+        {% endfor %}
+
+{% endblock %}
